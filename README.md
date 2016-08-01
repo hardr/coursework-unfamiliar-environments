@@ -1,6 +1,28 @@
-# coursework.galvanize.com
+# Rails Unfamiliar Environment
 
-This is the Rails version of the LMS.  It _used_ to be named students.galvanize.com, but is now coursework.galvanize.com.
+#### Objectives of an unfamiliar language
+
+- Setup developer environments for applications written in unfamiliar languages.
+- Analyze existing code in applications written in unfamiliar languages to fulfill requirements.
+
+#### Your task:
+
+- Set of Ruby/Rails environment
+- Fix minor bugs (3):
+  - There is a dependency missing.
+  - Cohorts new button is broken.
+  - Random pairs route gives an error.
+- Add a feature
+
+First set up [RVM/Rails](https://gist.github.com/berto/f4ac7d47d48c568490c8).
+Then fork/clone this repo and follow the old instructions below to get it set up.
+
+NOTE: The app uses an old version of Ruby. Also, you will need to add an OAuth
+application to your github account in order to log in.
+
+## coursework.galvanize.com
+
+This is the Rails version of the LMS. It _used_ to be named students.galvanize.com, but is now coursework.galvanize.com.
 
 ### Development Environment
 
