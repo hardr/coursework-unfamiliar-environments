@@ -19,7 +19,7 @@ namespace :db do
 
     desc 'Seeds the app the fullstack curriculum'
     task full_stack_curriculum: :environment do
-      curriculum = Curriculum.find_or_create_by!(name: 'Full Stack', description: 'full stack')
+      curriculum = Curriculum.find_or_create_by!(name: 'Full Stack', description: 'full stack', version: 'Full Stack')
       data = JSON.parse(File.read(Rails.root.join('db/seeds/full-stack-curriculum.json')), symbolize_names: true)
       data.each do |unit_name, data|
         tags = data[:tags] + [unit_name]
@@ -41,7 +41,7 @@ namespace :db do
 
     desc 'Seeds the app the gu curriculum'
     task gu_curriculum: :environment do
-      curriculum = Curriculum.find_or_create_by!(name: 'gU', description: 'gU')
+      curriculum = Curriculum.find_or_create_by!(name: 'gU', description: 'gU', version: 'gU')
       data = JSON.parse(File.read(Rails.root.join('db/seeds/gu-curriculum.json')), symbolize_names: true)
       data.each do |unit_name, data|
         tags = data[:tags] + [unit_name]
@@ -63,7 +63,7 @@ namespace :db do
 
     desc 'Seeds the app the gu prework curriculum'
     task gu_prework: :environment do
-      curriculum = Curriculum.find_or_create_by!(name: 'gU', description: 'gU')
+      curriculum = Curriculum.find_or_create_by!(name: 'gU', description: 'gU', version: 'gU')
       data = JSON.parse(File.read(Rails.root.join('db/seeds/gu-prework.json')), symbolize_names: true)
       data.each do |unit_name, data|
         tags = data[:tags] + [unit_name]

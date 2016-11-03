@@ -1,4 +1,4 @@
-ruby '2.1.5'
+ruby '2.1.4'
 
 source 'https://rubygems.org'
 
@@ -33,6 +33,7 @@ gem 'rails-observers', '~> 0.1.2'
 gem 'kaminari', '~> 0.16.3'
 gem 'foreigner'
 gem 'passenger'
+gem 'pg', '~> 0.18.4'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.1.0'
